@@ -1,0 +1,214 @@
+@import "reset.css";
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: Pretendard;
+  /* outline: 1px solid red; */
+}
+
+button {
+  /* 버튼 기본 스타일 지우기 */
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button, a {
+  /* 버튼, 링크 안 이미지 중앙 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button > img {
+  width: 100%;
+}
+
+.large-txt {
+  color: #374151;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.6rem;
+  margin: 0;
+  word-break: keep-all;
+}
+
+.small-txt {
+  color: #374151;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+}
+
+/*헤더*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+header #header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1120px;
+  min-width: 300px;
+  flex-grow: 1;
+  margin: 0 200px;
+}
+
+#logo {
+  width: 153px;
+  height: 51px;
+}
+
+/*main-welcome, main-bottom*/
+.main-welcome,.main-bottom {
+  background-color: #CFE5FF;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 540px;
+}
+
+.main-welcome-wrap,.main-bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1110px;
+  width: 90%;
+  /* height: 100%; */
+}
+
+/* main-welcome */
+.main-welcome-conts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+  padding-bottom: 7%;
+  gap: 2rem;
+}
+
+.main-welcome-wrap > img {
+  width: 60%;
+}
+
+/* main-bottom */
+.main-bottom-conts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40%;
+  padding-bottom: 15%;
+  gap: 2rem;
+}
+
+.main-bottom-wrap > img {
+  width: 60%;
+}
+
+/*main-feature 공통*/
+.main-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 720px;
+}
+
+.main-feature-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCFCFC;
+  max-width: 988px;
+  width: 90%;
+  gap: 5%;
+}
+
+.main-feature-wrap img {
+  width: 60%;
+}
+
+.main-feature-conts {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-feature-badge {
+  color: #3692FF;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  margin-bottom: 12px;
+}
+
+.main-feature-text {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* main-feature2 - 오른쪽 정렬 */
+#main-feature2 .main-feature-conts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#main-feature2 .large-txt, #main-feature2 .small-txt {
+  text-align: right;
+}
+
+/*푸터*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  background-color: #111827;
+  color: #E5E7EB;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer #footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1520px;
+  flex-grow: 1;
+  margin: 32px 200px 108px;
+}
+
+footer span {
+  color: #9CA3AF;
+}
+
+footer a {
+  text-decoration: none;
+  color: #E5E7EB;
+}
+
+.footer-content2 {
+  display: flex;
+  justify-content: center;
+  width: 159px;
+  height: 19px;
+  gap: 30px;
+}
+
+footer #footer-sns-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px
+}
